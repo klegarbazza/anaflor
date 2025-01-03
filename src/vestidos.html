@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Flor</title>
+    <link rel="icon" href="/assets/logo2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/assets/logo.jpg" alt="Ana Flor Logo">
+                </a>
+            </div>
+            <div class="contact-info">
+                <div class="phone-info">
+                    <img src="/assets/telefone.png" alt="" width="20px" height="20px">
+                    <p class="phone"><strong>37 99845-7511</strong></p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/vestuarioanaflor/" class="instagram-link" target="_blank">
+                        <img src="/assets/logotipo-do-instagram.png" alt="Instagram" width="27px" height="27px">
+                    </a>
+                    <a href="https://wa.me/37998457511" class="whatsapp-link" target="_blank">
+                        <img src="/assets/bolha-de-bate-papo(1).png" alt="WhatsApp" width="27px" height="27px">
+                    </a>
+                </div>
+            </div>
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <img src="/assets/procurar.png" class="search-icon" alt="Ícone de Busca" width="20px" height="20px" onclick="searchProducts()" style="cursor: pointer;">
+                </div>
+                <img class="carrinho" src="/assets/carrinho-de-compras.png" width="30px" height="30px" alt="Carrinho">
+                <a href="#cart" class="cart-link">Carrinho</a>
+            </div>
+        </div>
+        <nav class="cabecalho">
+            <ul>
+                <li class="dropdown">
+                    <a href="#categorias" class="dropbtn">CATEGORIAS</a>
+                    <div class="dropdown-content">
+                        <a href="vestidos.html">VESTIDOS</a>
+                        <a href="t_shirts.html">T-SHIRTS</a>
+                        <a href="body.html">BODY</a>
+                        <a href="croped.html">CROPED</a>
+                        <a href="manga_longa.html">MANGA-LONGA</a>
+                        <a href="shorts.html">SHORTS</a>
+                    </div>
+                </li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#new-arrivals">MAIS ACESSADOS</a></li>
+                <li><a href="#best-sellers">NOVIDADES</a></li>
+                <li><a href="#contact">COMPRE</a></li>
+            </ul>
+        </nav>
+        <div class="scrow">
+            <div class="scroll-content">
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+                <a>✅💸 PROMOÇÕES DIÁRIAS 💸✅</a>
+
+            </div>
+        </div>
+    </header>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="#best-sellers-section">MAIS ACESSADOS</a>
+        <a href="#new-arrivals">NOVIDADES</a>
+        <a href="#contact-section">COMPRE</a>
+        <a href="#categorias">CATEGORIAS</a>
+        <a href="vestidos.html">VESTIDOS</a>
+        <a href="t_shirts.html">T-SHIRTS</a>
+        <a href="body.html">BODY</a>
+        <a href="croped.html">CROPED</a>
+        <a href="manga_longa.html">MANGA-LONGA</a>
+        <a href="shorts.html">SHORTS</a>
+    </div>
+    <section id="product-category">
+        <h2>Vestidos</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="/assets/WhatsApp Image 2024-07-29 at 07.44.12.jpeg" alt="Vestido Roxo">
+                <h3>Vestido Roxo</h3>
+                <p>R$ 99,90</p>
+                <button class="buy-button" onclick="redirectToWhatsApp('Vestido Roxo')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="/assets/WhatsApp Image 2024-07-29 at 07.44.27.jpeg" alt="Vestido Preto">
+                <h3>Vestido Preto</h3>
+                <p>R$ 99,90</p>
+                <button class="buy-button" onclick="redirectToWhatsApp('Vestido Preto')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="/assets/WhatsApp Image 2024-07-29 at 07.44.39.jpeg" alt="Vestido Floral">
+                <h3>Vestido Floral</h3>
+                <p>R$ 149,90</p>
+                <button class="buy-button" onclick="redirectToWhatsApp('Vestido Floral')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="/assets/azul.jpeg" alt="Vestido Floral-Azul">
+                <h3>Vestido Floral-Azul</h3>
+                <p>R$ 109,90</p>
+                <button class="buy-button" onclick="redirectToWhatsApp('Vestido Floral-Azul')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="/assets/WhatsApp Image 2024-07-29 at 07.45.23.jpeg" alt="Vestido Onça">
+                <h3>Vestido Onça</h3>
+                <p>R$ 119,90</p>
+                <button class="buy-button" onclick="redirectToWhatsApp('Vestido Onça')">Comprar</button>
+            </div>
+            
+            <!-- Adicionar mais proodutos aqui -->
+        <!-- Adicionar mais proodutos aqui -->
+        <!-- Adicionar mais proodutos aqui -->
+        <!-- Adicionar mais proodutos aqui -->
+        <!-- Adicionar mais proodutos aqui -->
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.delay').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300);
+            });
+        });
+        function redirectToWhatsApp(productName) {
+        const message = `Olá, gostaria de comprar este produto: ${productName}`;
+        const whatsappUrl = `https://wa.me/37998457511?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    }
+    function searchProducts() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
+            const searchTerms = {
+                'vestido': 'vestidos.html',
+                'vestidos': 'vestidos.html',
+                'short': 'shorts.html',
+                'shorts': 'shorts.html',
+                'cropped': 'croped.html',
+                'croppeds': 'croped.html',
+                'body': 'body.html',
+                'bodies': 'body.html',
+                'manga longa': 'manga_longa.html',
+                'manga longas': 'manga_longa.html',
+                't-shirt': 't_shirts.html',
+                't-shirts': 't_shirts.html'
+            };
+            if (searchTerms[filter]) {
+            window.location.href = searchTerms[filter];
+            } else {
+                alert('Nenhum resultado encontrado. Tente novamente.');
+            }
+        }
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+
+        document.querySelectorAll('.delay').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.href;
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300);
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Ana Flor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
