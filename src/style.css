@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'FonteLUCAS';
-    src: url('/fonts/tickbite-type-colin-extralight.otf') format('truetype');
+    font-family: 'FonteAna';
+    src: url('../fonts/tickbite-type-colin-extralight.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 body {
-    font-family: 'FonteLucas';
+    font-family: 'FonteAna';
     margin: 0;
     padding: 0;
     background-color: #f8f0f5;
     color: #333;
-    background-image: url('/assets/background2.jpg');
+    background-image: url('../assets/background2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
